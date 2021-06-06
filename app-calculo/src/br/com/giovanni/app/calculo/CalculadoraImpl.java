@@ -1,9 +1,10 @@
 package br.com.giovanni.app.calculo;
 
+import br.com.giovanni.app.Calculadora;
 import br.com.giovanni.app.calculo.interno.OperacoesAritimeticas;
 import br.com.giovanni.app.logging.Logger;
 
-public class Calculadora {
+public class CalculadoraImpl implements Calculadora {
 
     private String id ="ABC";
 

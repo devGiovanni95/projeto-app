@@ -4,8 +4,12 @@
     requires transitive app.logging;
     exports br.com.giovanni.app.calculo;
 
-    exports br.com.giovanni.app.calculo.interno
-            to app.financeiro;
+//    exports br.com.giovanni.app.calculo.interno
+//            to app.financeiro;
 
-    opens br.com.giovanni.app.calculo to app.logging;
+    opens br.com.giovanni.app.calculo to app.financeiro;
+
+    requires app.api.publica;
+    provides br.com.giovanni.app.Calculadora
+            with br.com.giovanni.app.calculo.CalculadoraImpl;
 }
