@@ -7,5 +7,5 @@
     exports br.com.giovanni.app.calculo.interno
             to app.financeiro;
 
-    opens br.com.giovanni.app.calculo;
+    opens br.com.giovanni.app.calculo to app.logging;
 }
