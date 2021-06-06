@@ -5,6 +5,7 @@ import br.com.giovanni.app.logging.Logger;
 
 public class Calculadora {
 
+    private String id ="ABC";
 
     private OperacoesAritimeticas opAritimeticas = new OperacoesAritimeticas();
 
@@ -15,5 +16,9 @@ public class Calculadora {
 
     public Class<Logger> getLoggerClass(){
         return Logger.class;
+    }
+
+    public String getId() {
+        return id;
     }
 }
