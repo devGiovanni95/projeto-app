@@ -13,4 +13,7 @@ public class Calculadora {
         return opAritimeticas.soma(nums);
     }
 
+    public Class<Logger> getLoggerClass(){
+        return Logger.class;
+    }
 }
